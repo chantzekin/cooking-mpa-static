@@ -1,15 +1,16 @@
-# cooking-static
-> A project.
+### cooking-pages
+
+> A multiple page boilerplate build with ElemeFE/cooking
 
 # Development
 
 ```shell
-make dev
+npm run dev
 ```
 
 # Production
 ```
-make dist
+npm run build
 ```
 
 # License

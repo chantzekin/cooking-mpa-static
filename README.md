@@ -1,17 +1,17 @@
-### cooking-pages
+## COOKING PAGE
 
 > A multiple page boilerplate build with ElemeFE/cooking
 
-# Development
+### Development
 
 ```shell
 npm run dev
 ```
 
-# Production
+### Production
 ```
 npm run build
 ```
 
-# License
+### License
 ISC

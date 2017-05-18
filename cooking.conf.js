@@ -3,21 +3,28 @@
 var path = require('path')
 var cooking = require('cooking')
 
+var app = require('./app.json')
+
+var entries = function () {
+  var arr = {}
+  app.pages.forEach(function (page) {
+    arr[page.entry] = path.resolve(app.basePath, page.entry)
+  })
+  return arr
+}
+
 cooking.set({
-  entry: {
-    home: './src/home/main.js',
-    about: './src/about/main.js'
-  },
+  entry: entries(),
   dist: './dist',
   template: [
     {
       filename: 'home.html',
-      template: 'src/home/index.tpl',
+      template: 'src/pages/home/index.tpl',
       chunks: ['home']
     },
     {
       filename: 'about.html',
-      template: 'src/about/index.tpl',
+      template: 'src/pages/about/index.tpl',
       chunks: ['about']
     },
   ],
@@ -37,6 +44,10 @@ cooking.set({
   hash: true,
   sourceMap: true,
   extractCSS: true,
+
+  resolve: {
+    extensions: ['.js', '.json'],
+  },
 
   extends: ['sass', 'autoprefixer']
 })

@@ -1,6 +1,6 @@
 ## COOKING PAGE
 
-> A multiple page boilerplate build with ElemeFE/cooking
+> A multiple static page boilerplate build with ElemeFE/cooking
 
 ### Development
 

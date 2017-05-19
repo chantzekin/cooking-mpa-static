@@ -19,6 +19,7 @@
     "babel-preset-stage-2": "^6.24.1",
     "cooking": "^1.5.2",
     "cooking-autoprefixer": "^1.0.0",
+    "cooking-less": "^1.0.5",
     "cooking-sass": "^0.5.0",
     "css-loader": "^0.28.1",
     "extract-text-webpack-plugin": "^2.1.0",
@@ -34,5 +35,9 @@
     "url-loader": "^0.5.8",
     "webpack": "^2.5.1",
     "webpack-dev-server": "^2.4.5"
+  },
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "lodash": "^4.17.4"
   }
 }

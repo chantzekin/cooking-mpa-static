@@ -27,7 +27,7 @@
 $ npm install
 ```
 
-若访问 npm 较慢，字形爬梯子设置 cmd 的代理，或配置淘宝 npm 镜像
+若访问 npm 较慢，自备爬梯子设置 cmd 的代理，或配置淘宝 npm 镜像
 
 ```shell
 $ npm install -g cnpm --registry=https://registry.npm.taobao.org
